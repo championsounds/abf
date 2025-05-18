@@ -80,7 +80,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 1rem 0 1rem;
+  margin: 0.5rem 0 0.5rem;
 }
 
 .search-form {
@@ -144,9 +144,9 @@ main {
 }
 
 .trending-events h2 {
-  margin: 1rem 0 1rem;
+  margin: 0.5rem 0 0.5rem;
   padding: 0 1rem;
-  font-size: 22px;
+  font-size: 1rem;
   min-height: 100%;
 }
 
@@ -230,7 +230,7 @@ footer {
 
 .footer-box h2 {
   margin-bottom: 0.5rem;
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-size: clamp(0.9rem, 1.25vw, 1rem);
 }
 
 .menu, .where, .social {
@@ -238,8 +238,8 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: clamp(1rem, 2vw, 2rem);
-  font-size: clamp(0.9rem, 1vw, 1rem);
+  padding: clamp(1rem, 2vw, 0.5rem);
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
 }
 
 address, ul {
