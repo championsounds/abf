@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Airbnb Cereal VF, Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+header, main, footer {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img.logo {
+  width: 30vw;
+  max-width: 250px;
+  min-width: 120px;
+  height: auto;
+  margin: 0.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+nav button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-host {
+  background-color: teal;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 100%;
+  justify-content: space-evenly;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0.5rem 0 0.5rem;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  flex: 1 1 120px;
+  min-width: 120px;
+  padding: 0.6rem 1rem 0.3rem;
+  background-color: #f7f7f7;
+  border-radius: 2rem;
+}
+
+.form-group label {
+  position: absolute;
+  top: 0.3rem;
+  left: 1rem;
+  font-size: 0.65rem;
+  color: #777;
+  pointer-events: none;
+}
+
+.form-group input {
+  margin-top: 0.8rem;
+  width: 100%;
+  font-size: 0.9rem;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.form-group select {
+  margin-top: 0.8rem;
+  width: 100%;
+  font-size: 0.9rem;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.search-form button {
+  flex: 1 1 auto;
+  min-width: 100px;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #ffcd00;
+  font-weight: bold;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: teal;
+  color: white;
+}
+
+.trending-events h2 {
+  margin: 0.5rem 0 0.5rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  min-height: 100%;
+}
+
+.splide, .search-bar, .search-form {
+  width: 100%;
+  max-width: 100%;
+}
+
+.splide-centered {
+  padding: 0 1rem;
+}
+
+.splide__track {
+  padding: 0 2rem;
+}
+
+.splide__slide .event-card,
+.event-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event-card {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.event-image {
+  flex: 1;
+  margin: auto;
+}
+
+.event-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 1rem;
+}
+
+.event-card img {
+  width: 100%;
+  height: 250px;
+  margin: 0.5rem 0;
+  border-radius: 2rem;
+}
+
+.event-card button {
+  align-self: start;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  background: teal;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  margin-top: 0.5rem;
+  background-color: rgb(255, 217, 54);
+}
+
+.footer-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  text-align: center;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.footer-box h2 {
+  margin-bottom: 0.5rem;
+  font-size: clamp(0.9rem, 1.25vw, 1rem);
+}
+
+.menu, .where, .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: clamp(1rem, 2vw, 0.5rem);
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
+}
+
+address, ul {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .footer-box {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+}
