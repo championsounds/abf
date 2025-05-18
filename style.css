@@ -260,6 +260,10 @@ ul {
   line-height: 1.5;
 }
 
+li {
+  margin-bottom: 0.5rem;
+}
+
 a {
   text-decoration: none;
 }
